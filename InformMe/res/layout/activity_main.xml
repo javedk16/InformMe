@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#000000"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Add Student"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="41dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="#454545"
+            android:onClick="showAddForm"
+            android:text="+"
+            android:textColor="#FF8000"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/Buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- Editext for Search 
+    	<EditText android:id="@+id/inputSearch"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:hint="Search Student"
+    	android:inputType="textVisiblePassword"/>-->
+        
+        <Button
+            android:id="@+id/sendSMS"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="sendSMS"
+            android:text="Send SMS"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="1dp"
+        android:background="#454545"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:choiceMode="multipleChoice"
+            android:longClickable="true" >
+        </ListView>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="41dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#454545"
+        android:onClick="showAddForm"
+        android:text="+"
+        android:textColor="#FEFB00"
+        android:textSize="30sp" />
+
+</LinearLayout>
